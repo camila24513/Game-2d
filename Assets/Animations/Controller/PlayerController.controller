@@ -7,21 +7,24 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: AnimationState
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3673622170068642782}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
   m_HasFixedDuration: 1
-  m_InterruptionSource: 0
+  m_InterruptionSource: 3
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1101 &-7206232438299493394
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -29,21 +32,24 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: AnimationState
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4998083901108657285}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
   m_HasFixedDuration: 1
-  m_InterruptionSource: 0
+  m_InterruptionSource: 3
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1102 &-7142963800298093958
 AnimatorState:
   serializedVersion: 6
@@ -52,7 +58,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: player-walk-south
-  m_Speed: 1
+  m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -142,7 +148,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: player-walk-north
-  m_Speed: 1
+  m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -167,21 +173,24 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: AnimationState
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3691332995577533869}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
   m_HasFixedDuration: 1
-  m_InterruptionSource: 0
+  m_InterruptionSource: 3
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!1101 &-108557982194558215
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -189,21 +198,24 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: AnimationState
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7142963800298093958}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0.75
   m_HasExitTime: 0
   m_HasFixedDuration: 1
-  m_InterruptionSource: 0
+  m_InterruptionSource: 3
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -240,7 +252,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: player-walk-west
-  m_Speed: 1
+  m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -266,7 +278,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: player-walk-east
-  m_Speed: 1
+  m_Speed: 0.6
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -292,7 +304,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: player-idle
-  m_Speed: 1
+  m_Speed: 0.25
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
